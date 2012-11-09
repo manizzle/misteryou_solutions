@@ -1,0 +1,166 @@
+\input texinfo   @c -*-texinfo-*-
+@c %**start of header
+@setfilename crank.info
+@settitle Crank User Manual
+@setchapternewpage off
+@c %**end of header
+
+@ifinfo
+This is the user manual for Crank
+
+Copyright @copyright{} 2001 Matthew Russell
+@end ifinfo
+
+@titlepage
+@title Crank User Manual
+@subtitle The CRyptANalysis toolKit
+@subtitle Version 0.2.1
+@subtitle August 2001
+@author Matthew Russell <twig5151@@yahoo.com>
+
+@page
+@vskip 0pt plus 1filll
+Copyright @copyright{} 2001 Matthew Russell
+
+Permission is granted to make and distribute verbatim copies of this
+manual provided the copyright notice and this permission notice are
+preserved on all copies.
+
+Permission is granted to copy and distribute modified versions of this
+manual under the conditions for verbatim copying, provided that the
+entire resulting derived work is distributed under the terms of a
+permission notice identical to this one.
+
+Permission is granted to copy and distribute translations of this manual
+into another language, under the above conditions for modified versions,
+except that this permission notice may be stated in a translation
+approved by the author.
+@end titlepage
+
+@c       node-name next          prev          up
+@node    Top, Introduction, (dir), (dir)
+@top Crank User Manual
+@ifinfo
+This document aims to provide an introduction to Crank and using it to 
+break cryptograms.
+@end ifinfo
+
+@menu
+* Introduction::
+* Componants::
+@end menu
+
+@node    Introduction, Componants,  Top,      Top
+@comment node-name,     next,          previous, up
+@chapter Introduction
+     
+Crank, or the ``CRyptANalysis toolKit'', is a program designed to provide
+automated cryptanalysis of classical pen and paper cryptosystems (an example
+of which might be the Caesar cipher, where each letter is substituted by
+the letter three places along in the alphabet). Because the mechanisms for
+decryption (authorised or otherwise) are similar to encryption, Crank also
+doubles as a cryptographic typewriter, where you can see messages being 
+encrypted on the fly as you type.
+
+When attempting an automated attack, the task is viewed as an 
+optimisation problem. The quantity to be optimised is the ``plaintextness''
+of the, er, plaintext, the latter being computed from the ciphertext using 
+an instance of a cryptographic system. This instance is a transformation 
+(called a ``transform'' by Crank), usually specified by a key, that maps a 
+text string to another text string. The optimiser works over the 
+space of keys of the transformation, trying to increase the 
+``plaintextness'', or in Crank terminology, ``fitness'' of the resultant 
+candidate decrypted plaintext. The method the optimiser uses to search the
+keyspace is called the ``heuristic''.
+
+The purpose of Crank is therefore twofold; first, to provide a library of 
+transform, fitness and heuristic ``componants'', and second to allow them
+to be combined together and used in the cryptanalysis of a cryptogram.
+
+@node Componants, Instances and Parameters, Introduction, Top
+@chapter Componants
+
+Most of Crank's cryptanalytic functionality is placed in componants, which 
+the rest of the program is designed to manipulate.
+
+@menu
+* Instances and Parameters::
+* Transform::
+* Fitness::
+* Heuristic::
+* User Interface::
+@end menu
+
+@node Instances and Parameters, Transform, Componants, Componants
+@section Instances and Parameters
+
+A componant should be thought of not as a specific item, but as a group or 
+class of them, where there can be many instances of a componant, each 
+seperate and unique in its own right (this is the same idea as ``class vs 
+object'' in OOP). When manipulating componants in Crank, you are in fact 
+working with instances of these componant classes, creating, modifying, 
+deleting and linking them together.
+
+An instance of a componant is described by a set of parameters that 
+determine its behaviour. To all intents and purposes, an instance is
+identical to the values of its parameters (though you can have several 
+duplicate instances with the same values). A componant contains a public
+table describing the number and type of the parameters its instances use. 
+This allows generic componants to work with the internals of an instance
+without knowing the details beforehand. For example, a genetic algorithm 
+could configure itself to work with any type of transformation, just by 
+reading the associated transform's parameter table.
+
+@node Transform, Fitness, Instances and Parameters, Componants
+@section Transform Componants
+
+Transform componants are intended to correspond roughly to a cipher scheme.
+More accurately, they are meant to represent the decryption side of a 
+cryptosystem, but in many classical ciphers encryption and decryption are
+strongly related (for example, the way to decrypt a message encrypted using
+a monoalphabetic substitution cipher is to encrypt again using the inverse
+key). At the most basic level, instances of these componants describe a 
+mapping from any text string to another text string.
+
+Like all componants, transform instances have parameter state. In this case,
+the set of parameters of a transform is called the key. Almost all ciphers
+use keys to specify transformations and put the security of the system into
+keeping the key secret (for example, in a Vigenère system, the details
+of how encryption is performed is well known, but the word used to
+assign alphabets is the secret key). If the key is discovered, ciphertext 
+can be read. Crank tries to optimise transform instances in order
+to recover the key.
+
+@node Fitness, Heuristic, Transform, Componants
+@section Fitness Componants
+
+Fitness componants describe classes of fitness functions. A fitness function
+measures how close a given text string is to plaintext. In Crank, fitness 
+functions give outputs that are real numbers, with lesser values indicating
+that the text has a better chance of being plaintext. The actual values
+ themselves aren't important, but the relative ordering of them is. If one 
+text string produces 0.0001 and another produces 1000000.0, all you can
+deduce is that the first string is more likely to be plaintext.
+
+@node Heuristic, User Interface, Fitness, Componants
+@section Heuristic Componants
+
+A heuristic componant represents an algorithm which is used to search the 
+keyspace of a transformation. It uses a fitness instance to score the
+success of each candidate transform instance on the cryptogram in question.
+At the termination of the algorithm, it will return the best key found, 
+which if it has been successful, should decrypt the cryptogram to plaintext.
+
+@node User Interface, , Heuristic, Componants
+@section User Interface Componants
+
+User interface componants are not used directly in the optimisation process;
+rather, instances allow the viewing and editing of parameters of other 
+instances in a user-friendly manner. They can be specific, applying only 
+to one componant, or generic, applying to any. Within Crank, each time you
+work with a transform, heuristic or fitness componant, you will probably
+also need to specify a user interface componant for it.
+
+@contents
+@bye
+

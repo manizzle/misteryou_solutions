@@ -1,0 +1,79 @@
+dnl Process this file with autoconf to produce a configure script.
+
+AC_INIT(configure.in)
+AM_INIT_AUTOMAKE(crank, 0.2.1)
+AM_CONFIG_HEADER(config.h)
+AC_PROG_CC
+AC_HEADER_STDC
+AC_LIBTOOL_DLOPEN
+AM_PROG_LIBTOOL
+
+AC_HEADER_DIRENT
+
+AC_SYS_LONG_FILE_NAMES
+AC_MINGW32
+AM_PATH_GTK
+
+dnl Check to see if guile should be used
+guile_shell=no
+AC_ARG_WITH(guile,
+  [  --without-guile         disable guile shell (and also preferences / patches) [default=no]],  ,  
+     AC_CHECK_LIB(guile, scm_set_smob_mark)
+     guile_shell=yes
+   )
+AM_CONDITIONAL(WITH_GUILE, test x$guile_shell = xyes)
+
+
+dnl Check to see if the componants should be built dynamically
+build_dynamic=no   
+AC_ARG_ENABLE(dynamic-componants,
+  [  --enable-dynamic-componants   build componants as dynamically loaded modules [default=no]],  if test "$enable_dynamic_componants" = y || test "$enable_dynamic_componants" = yes; then
+    AC_DEFINE(BUILD_DYNAMIC)
+	build_dynamic=yes
+
+  fi)
+AM_CONDITIONAL(BUILD_DYNAMIC, test x$build_dynamic = xyes)
+
+dnl Check message options
+AC_ARG_ENABLE(debug-mesg,
+  [  --enable-debug-mesg     output debugging messages [default=no]])
+
+if test "$enable_debug_mesg" = y || test "$enable_debug_mesg" = yes; then
+    AC_DEFINE(DISPLAY_DEBUG)
+fi
+
+AC_ARG_ENABLE(info-mesg,
+  [  --enable-info-mesg      output informative messages [default=yes]])
+
+ if test "$enable_info_mesg" = n || test "$enable_info_mesg" = no; then
+   echo;
+else
+    AC_DEFINE(DISPLAY_INFO)
+  fi
+
+AC_ARG_ENABLE(warn-mesg,
+  [  --enable-warn-mesg      output warning messages [default=yes]])
+
+if test "$enable_warn_mesg" = n || test "$enable_warn_mesg" = no; then
+    echo;
+	else
+    AC_DEFINE(DISPLAY_WARN)
+  fi
+ 
+
+AC_OUTPUT([
+Makefile
+src/Makefile
+src/scheme/Makefile
+doc/Makefile
+data/Makefile
+pixmaps/Makefile
+patch/Makefile
+])
+
+echo "
+Configuration:
+
+	Build componants as dynamic modules:	$build_dynamic
+	With Guile:                             $guile_shell
+"

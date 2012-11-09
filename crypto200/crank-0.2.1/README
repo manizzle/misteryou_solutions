@@ -1,0 +1,20 @@
+Crank - README
+==============
+
+Version 0.2.1
+-------------
+
+Warning! This is a very unstable / unusable development release.
+Take a look at the latest 0.1.x version (currently 0.1.4) for something
+(currently!) more useful. However, if you do find bugs or have any comments,
+ideas, features - feel free to let the author know [or send a patch ;-) ]
+
+Homepage: http://crank.sourceforge.net/
+
+See 'AUTHORS' to find someone to blame.
+See 'INSTALL' for installation info, dependancies and configure options.
+See 'BUGS' for some of the current known bugs.
+See 'TODO' for features that might be implemented in the future.
+See 'ChangeLog' for changes over versions.
+See 'NEWS' for important changes in this version.
+See 'COPYING' for the license (it's the vanilla GPL)

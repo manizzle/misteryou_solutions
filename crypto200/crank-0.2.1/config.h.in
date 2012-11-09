@@ -1,0 +1,41 @@
+/* config.h.in.  Generated automatically from configure.in by autoheader.  */
+
+/* Define if you support file names longer than 14 characters.  */
+#undef HAVE_LONG_FILE_NAMES
+
+/* Define if you have the ANSI C header files.  */
+#undef STDC_HEADERS
+
+/* Build componants as dynamic modules */
+#undef BUILD_DYNAMIC
+
+/* Display debugging text */
+#undef DISPLAY_DEBUG
+
+/* Display informative text */
+#undef DISPLAY_INFO
+
+/* Display warning messages */
+#undef DISPLAY_WARN
+
+/* Define if you have the <dirent.h> header file.  */
+#undef HAVE_DIRENT_H
+
+/* Define if you have the <ndir.h> header file.  */
+#undef HAVE_NDIR_H
+
+/* Define if you have the <sys/dir.h> header file.  */
+#undef HAVE_SYS_DIR_H
+
+/* Define if you have the <sys/ndir.h> header file.  */
+#undef HAVE_SYS_NDIR_H
+
+/* Define if you have the guile library (-lguile).  */
+#undef HAVE_LIBGUILE
+
+/* Name of package */
+#undef PACKAGE
+
+/* Version number of package */
+#undef VERSION
+

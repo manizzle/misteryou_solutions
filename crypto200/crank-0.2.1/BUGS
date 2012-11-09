@@ -1,0 +1,4 @@
+* error.h:debug()
+   uses GCC extension to handle variadic macros
+* dynamic componants crash
+   when built with --enable-dynamic-componants, g_module_open() dies on gui_generic_readonly

@@ -1,0 +1,628 @@
+# Generated automatically from Makefile.in by configure.
+# Makefile.in generated automatically by automake 1.4 from Makefile.am
+
+# Copyright (C) 1994, 1995-8, 1999 Free Software Foundation, Inc.
+# This Makefile.in is free software; the Free Software Foundation
+# gives unlimited permission to copy and/or distribute it,
+# with or without modifications, as long as this notice is preserved.
+
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY, to the extent permitted by law; without
+# even the implied warranty of MERCHANTABILITY or FITNESS FOR A
+# PARTICULAR PURPOSE.
+
+
+SHELL = /bin/sh
+
+srcdir = .
+top_srcdir = ..
+prefix = /usr/local
+exec_prefix = ${prefix}
+
+bindir = ${exec_prefix}/bin
+sbindir = ${exec_prefix}/sbin
+libexecdir = ${exec_prefix}/libexec
+datadir = ${prefix}/share
+sysconfdir = ${prefix}/etc
+sharedstatedir = ${prefix}/com
+localstatedir = ${prefix}/var
+libdir = ${exec_prefix}/lib
+infodir = ${prefix}/info
+mandir = ${prefix}/man
+includedir = ${prefix}/include
+oldincludedir = /usr/include
+
+DESTDIR =
+
+pkgdatadir = $(datadir)/crank
+pkglibdir = $(libdir)/crank
+pkgincludedir = $(includedir)/crank
+
+top_builddir = ..
+
+ACLOCAL = aclocal
+AUTOCONF = autoconf
+AUTOMAKE = automake
+AUTOHEADER = autoheader
+
+INSTALL = /usr/bin/install -c
+INSTALL_PROGRAM = ${INSTALL} $(AM_INSTALL_PROGRAM_FLAGS)
+INSTALL_DATA = ${INSTALL} -m 644
+INSTALL_SCRIPT = ${INSTALL_PROGRAM}
+transform = s,x,x,
+
+NORMAL_INSTALL = :
+PRE_INSTALL = :
+POST_INSTALL = :
+NORMAL_UNINSTALL = :
+PRE_UNINSTALL = :
+POST_UNINSTALL = :
+host_alias = x86_64-unknown-linux-gnu
+host_triplet = 
+AS = @AS@
+CC = gcc
+DLLTOOL = @DLLTOOL@
+GTK_CFLAGS = -I/usr/include/gtk-1.2 -I/usr/include/glib-1.2 -I/usr/lib/glib/include
+GTK_CONFIG = /usr/bin/gtk-config
+GTK_LIBS = -L/usr/lib -lgtk -lgdk -lgmodule -lglib -ldl -lXi -lXext -lX11 -lm
+LIBTOOL = $(SHELL) $(top_builddir)/libtool
+LN_S = ln -s
+MAKEINFO = makeinfo
+OBJDUMP = @OBJDUMP@
+PACKAGE = crank
+RANLIB = ranlib
+VERSION = 0.2.1
+
+SUBDIRS = scheme
+
+bin_PROGRAMS = crank
+
+EXTRA_DIST = crank.glade crank.i
+
+common_crank_sources = main.c register_componant.c parameter.c componant.c instance.c null_componant.c globals.c files.c                        crank.h componant.h error.h parameter.h register_componant.h plugin.h instance.h globals.h files.h                        gui_callbacks.c gui_interface.c gui_support.c gui_init.c gui_globals.c gui_textarea.c                        gui_callbacks.h gui_interface.h gui_support.h gui_init.h gui_globals.h gui_textarea.h                        patch.c patch.h 
+
+
+componant_sources = transform_monoalphabetic.c                 common_monoalphabetic.c common_monoalphabetic.h                 fitness_trigram.c                 common_trigram.c common_trigram.h                 heuristic_random.c                 common_constraint_parse.c common_constraint_parse.h                 heuristic_hillclimbing.c                 heuristic_simulated_annealing.c                 gui_generic.c gui_generic_interface.h gui_generic_interface.c  gui_generic_callbacks.h gui_generic_callbacks.c                 transform_transposition_grid.c                 common_transposition_grid.c common_transposition_grid.h 
+
+
+guile_only_sources = crank_wrap.c scheme_interface.c scheme_interface.h
+
+#plugin_LTLIBRARIES = libtransform_monoalphabetic.la                       libfitness_trigram.la                                libheuristic_random.la                               libheuristic_hillclimbing.la                         libgui_generic.la                                    libheuristic_simulated_annealing.la                      libtransform_transposition_grid.la
+#libtransform_monoalphabetic_la_SOURCES = transform_monoalphabetic.c common_monoalphabetic.c common_monoalphabetic.h crank.h componant.h
+#libfitness_trigram_la_SOURCES = fitness_trigram.c common_trigram.c common_trigram.h crank.h componant.h
+#libheuristic_random_la_SOURCES = heuristic_random.c common_constraint_parse.c common_constraint_parse.h crank.h componant.h
+#libheuristic_hillclimbing_la_SOURCES = heuristic_hillclimbing.c common_constraint_parse.c common_constraint_parse.h crank.h componant.h
+#libgui_generic_la_SOURCES = gui_generic.c crank.h componant.h gui_generic_interface.h gui_generic_interface.c gui_generic_callbacks.h gui_generic_callbacks.c 
+#libheuristic_simulated_annealing_la_SOURCES = heuristic_hillclimbing.c common_constraint_parse.c common_constraint_parse.h crank.h componant.h
+#libtransform_transposition_grid_la_SOURCES = transform_transposition_grid.c common_transposition_grid.c common_transposition_grid.h crank.h componant.h
+#crank_SOURCES = $(common_crank_sources) $(guile_only_sources)
+##crank_SOURCES = $(common_crank_sources)
+crank_SOURCES = $(common_crank_sources) $(guile_only_sources) $(componant_sources)
+#crank_SOURCES = $(common_crank_sources) $(componant_sources)
+
+plugindir = $(pkglibdir)/plugins
+INCLUDES = -DPLUGINDIR=\""$(plugindir)"\" -DDATADIR=\""$(pkgdatadir)"\"
+CFLAGS = -g -O2 -I/usr/include/gtk-1.2 -I/usr/include/glib-1.2 -I/usr/lib/glib/include -Wall
+LIBS = -lguile  -L/usr/lib -lgtk -lgdk -lgmodule -lglib -ldl -lXi -lXext -lX11 -lm
+mkinstalldirs = $(SHELL) $(top_srcdir)/mkinstalldirs
+CONFIG_HEADER = ../config.h
+CONFIG_CLEAN_FILES = 
+LTLIBRARIES =  $(plugin_LTLIBRARIES)
+
+
+DEFS = -DHAVE_CONFIG_H -I. -I$(srcdir) -I..
+CPPFLAGS = 
+LDFLAGS = 
+libtransform_monoalphabetic_la_LDFLAGS = 
+libtransform_monoalphabetic_la_LIBADD = 
+#libtransform_monoalphabetic_la_OBJECTS =  \
+#transform_monoalphabetic.lo \
+#common_monoalphabetic.lo
+libfitness_trigram_la_LDFLAGS = 
+libfitness_trigram_la_LIBADD = 
+#libfitness_trigram_la_OBJECTS =  fitness_trigram.lo \
+#common_trigram.lo
+libheuristic_random_la_LDFLAGS = 
+libheuristic_random_la_LIBADD = 
+#libheuristic_random_la_OBJECTS =  \
+#heuristic_random.lo common_constraint_parse.lo
+libheuristic_hillclimbing_la_LDFLAGS = 
+libheuristic_hillclimbing_la_LIBADD = 
+#libheuristic_hillclimbing_la_OBJECTS =  \
+#heuristic_hillclimbing.lo \
+#common_constraint_parse.lo
+libgui_generic_la_LDFLAGS = 
+libgui_generic_la_LIBADD = 
+#libgui_generic_la_OBJECTS =  gui_generic.lo \
+#gui_generic_interface.lo gui_generic_callbacks.lo
+libheuristic_simulated_annealing_la_LDFLAGS = 
+libheuristic_simulated_annealing_la_LIBADD = 
+#libheuristic_simulated_annealing_la_OBJECTS =  \
+#heuristic_hillclimbing.lo \
+#common_constraint_parse.lo
+libtransform_transposition_grid_la_LDFLAGS = 
+libtransform_transposition_grid_la_LIBADD = 
+#libtransform_transposition_grid_la_OBJECTS =  \
+#transform_transposition_grid.lo \
+#common_transposition_grid.lo
+PROGRAMS =  $(bin_PROGRAMS)
+
+##crank_OBJECTS =  main.o \
+##register_componant.o parameter.o \
+##componant.o instance.o \
+##null_componant.o globals.o \
+##files.o gui_callbacks.o \
+##gui_interface.o gui_support.o \
+##gui_init.o gui_globals.o \
+##gui_textarea.o patch.o
+#crank_OBJECTS =  main.o \
+#register_componant.o parameter.o \
+#componant.o instance.o \
+#null_componant.o globals.o \
+#files.o gui_callbacks.o \
+#gui_interface.o gui_support.o \
+#gui_init.o gui_globals.o \
+#gui_textarea.o patch.o \
+#transform_monoalphabetic.o \
+#common_monoalphabetic.o \
+#fitness_trigram.o \
+#common_trigram.o \
+#heuristic_random.o \
+#common_constraint_parse.o \
+#heuristic_hillclimbing.o \
+#heuristic_simulated_annealing.o \
+#gui_generic.o \
+#gui_generic_interface.o \
+#gui_generic_callbacks.o \
+#transform_transposition_grid.o \
+#common_transposition_grid.o
+crank_OBJECTS =  main.o \
+register_componant.o parameter.o \
+componant.o instance.o \
+null_componant.o globals.o \
+files.o gui_callbacks.o \
+gui_interface.o gui_support.o \
+gui_init.o gui_globals.o \
+gui_textarea.o patch.o \
+crank_wrap.o scheme_interface.o \
+transform_monoalphabetic.o \
+common_monoalphabetic.o \
+fitness_trigram.o \
+common_trigram.o \
+heuristic_random.o \
+common_constraint_parse.o \
+heuristic_hillclimbing.o \
+heuristic_simulated_annealing.o \
+gui_generic.o \
+gui_generic_interface.o \
+gui_generic_callbacks.o \
+transform_transposition_grid.o \
+common_transposition_grid.o
+#crank_OBJECTS =  main.o \
+#register_componant.o parameter.o \
+#componant.o instance.o \
+#null_componant.o globals.o files.o \
+#gui_callbacks.o gui_interface.o \
+#gui_support.o gui_init.o \
+#gui_globals.o gui_textarea.o \
+#patch.o crank_wrap.o \
+#scheme_interface.o
+crank_LDADD = $(LDADD)
+crank_DEPENDENCIES = 
+crank_LDFLAGS = 
+COMPILE = $(CC) $(DEFS) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(AM_CFLAGS) $(CFLAGS)
+LTCOMPILE = $(LIBTOOL) --mode=compile $(CC) $(DEFS) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(AM_CFLAGS) $(CFLAGS)
+CCLD = $(CC)
+LINK = $(LIBTOOL) --mode=link $(CCLD) $(AM_CFLAGS) $(CFLAGS) $(LDFLAGS) -o $@
+DIST_COMMON =  Makefile.am Makefile.in
+
+
+DISTFILES = $(DIST_COMMON) $(SOURCES) $(HEADERS) $(TEXINFOS) $(EXTRA_DIST)
+
+TAR = gtar
+GZIP_ENV = --best
+SOURCES = $(libtransform_monoalphabetic_la_SOURCES) $(libfitness_trigram_la_SOURCES) $(libheuristic_random_la_SOURCES) $(libheuristic_hillclimbing_la_SOURCES) $(libgui_generic_la_SOURCES) $(libheuristic_simulated_annealing_la_SOURCES) $(libtransform_transposition_grid_la_SOURCES) $(crank_SOURCES)
+OBJECTS = $(libtransform_monoalphabetic_la_OBJECTS) $(libfitness_trigram_la_OBJECTS) $(libheuristic_random_la_OBJECTS) $(libheuristic_hillclimbing_la_OBJECTS) $(libgui_generic_la_OBJECTS) $(libheuristic_simulated_annealing_la_OBJECTS) $(libtransform_transposition_grid_la_OBJECTS) $(crank_OBJECTS)
+
+all: all-redirect
+.SUFFIXES:
+.SUFFIXES: .S .c .lo .o .s
+$(srcdir)/Makefile.in: Makefile.am $(top_srcdir)/configure.in $(ACLOCAL_M4) 
+	cd $(top_srcdir) && $(AUTOMAKE) --gnu --include-deps src/Makefile
+
+Makefile: $(srcdir)/Makefile.in  $(top_builddir)/config.status
+	cd $(top_builddir) \
+	  && CONFIG_FILES=$(subdir)/$@ CONFIG_HEADERS= $(SHELL) ./config.status
+
+
+mostlyclean-pluginLTLIBRARIES:
+
+clean-pluginLTLIBRARIES:
+	-test -z "$(plugin_LTLIBRARIES)" || rm -f $(plugin_LTLIBRARIES)
+
+distclean-pluginLTLIBRARIES:
+
+maintainer-clean-pluginLTLIBRARIES:
+
+install-pluginLTLIBRARIES: $(plugin_LTLIBRARIES)
+	@$(NORMAL_INSTALL)
+	$(mkinstalldirs) $(DESTDIR)$(plugindir)
+	@list='$(plugin_LTLIBRARIES)'; for p in $$list; do \
+	  if test -f $$p; then \
+	    echo "$(LIBTOOL)  --mode=install $(INSTALL) $$p $(DESTDIR)$(plugindir)/$$p"; \
+	    $(LIBTOOL)  --mode=install $(INSTALL) $$p $(DESTDIR)$(plugindir)/$$p; \
+	  else :; fi; \
+	done
+
+uninstall-pluginLTLIBRARIES:
+	@$(NORMAL_UNINSTALL)
+	list='$(plugin_LTLIBRARIES)'; for p in $$list; do \
+	  $(LIBTOOL)  --mode=uninstall rm -f $(DESTDIR)$(plugindir)/$$p; \
+	done
+
+.c.o:
+	$(COMPILE) -c $<
+
+.s.o:
+	$(COMPILE) -c $<
+
+.S.o:
+	$(COMPILE) -c $<
+
+mostlyclean-compile:
+	-rm -f *.o core *.core
+
+clean-compile:
+
+distclean-compile:
+	-rm -f *.tab.c
+
+maintainer-clean-compile:
+
+.c.lo:
+	$(LIBTOOL) --mode=compile $(COMPILE) -c $<
+
+.s.lo:
+	$(LIBTOOL) --mode=compile $(COMPILE) -c $<
+
+.S.lo:
+	$(LIBTOOL) --mode=compile $(COMPILE) -c $<
+
+mostlyclean-libtool:
+	-rm -f *.lo
+
+clean-libtool:
+	-rm -rf .libs _libs
+
+distclean-libtool:
+
+maintainer-clean-libtool:
+
+libtransform_monoalphabetic.la: $(libtransform_monoalphabetic_la_OBJECTS) $(libtransform_monoalphabetic_la_DEPENDENCIES)
+	$(LINK) -rpath $(plugindir) $(libtransform_monoalphabetic_la_LDFLAGS) $(libtransform_monoalphabetic_la_OBJECTS) $(libtransform_monoalphabetic_la_LIBADD) $(LIBS)
+
+libfitness_trigram.la: $(libfitness_trigram_la_OBJECTS) $(libfitness_trigram_la_DEPENDENCIES)
+	$(LINK) -rpath $(plugindir) $(libfitness_trigram_la_LDFLAGS) $(libfitness_trigram_la_OBJECTS) $(libfitness_trigram_la_LIBADD) $(LIBS)
+
+libheuristic_random.la: $(libheuristic_random_la_OBJECTS) $(libheuristic_random_la_DEPENDENCIES)
+	$(LINK) -rpath $(plugindir) $(libheuristic_random_la_LDFLAGS) $(libheuristic_random_la_OBJECTS) $(libheuristic_random_la_LIBADD) $(LIBS)
+
+libheuristic_hillclimbing.la: $(libheuristic_hillclimbing_la_OBJECTS) $(libheuristic_hillclimbing_la_DEPENDENCIES)
+	$(LINK) -rpath $(plugindir) $(libheuristic_hillclimbing_la_LDFLAGS) $(libheuristic_hillclimbing_la_OBJECTS) $(libheuristic_hillclimbing_la_LIBADD) $(LIBS)
+
+libgui_generic.la: $(libgui_generic_la_OBJECTS) $(libgui_generic_la_DEPENDENCIES)
+	$(LINK) -rpath $(plugindir) $(libgui_generic_la_LDFLAGS) $(libgui_generic_la_OBJECTS) $(libgui_generic_la_LIBADD) $(LIBS)
+
+libheuristic_simulated_annealing.la: $(libheuristic_simulated_annealing_la_OBJECTS) $(libheuristic_simulated_annealing_la_DEPENDENCIES)
+	$(LINK) -rpath $(plugindir) $(libheuristic_simulated_annealing_la_LDFLAGS) $(libheuristic_simulated_annealing_la_OBJECTS) $(libheuristic_simulated_annealing_la_LIBADD) $(LIBS)
+
+libtransform_transposition_grid.la: $(libtransform_transposition_grid_la_OBJECTS) $(libtransform_transposition_grid_la_DEPENDENCIES)
+	$(LINK) -rpath $(plugindir) $(libtransform_transposition_grid_la_LDFLAGS) $(libtransform_transposition_grid_la_OBJECTS) $(libtransform_transposition_grid_la_LIBADD) $(LIBS)
+
+mostlyclean-binPROGRAMS:
+
+clean-binPROGRAMS:
+	-test -z "$(bin_PROGRAMS)" || rm -f $(bin_PROGRAMS)
+
+distclean-binPROGRAMS:
+
+maintainer-clean-binPROGRAMS:
+
+install-binPROGRAMS: $(bin_PROGRAMS)
+	@$(NORMAL_INSTALL)
+	$(mkinstalldirs) $(DESTDIR)$(bindir)
+	@list='$(bin_PROGRAMS)'; for p in $$list; do \
+	  if test -f $$p; then \
+	    echo " $(LIBTOOL)  --mode=install $(INSTALL_PROGRAM) $$p $(DESTDIR)$(bindir)/`echo $$p|sed 's/$(EXEEXT)$$//'|sed '$(transform)'|sed 's/$$/$(EXEEXT)/'`"; \
+	    $(LIBTOOL)  --mode=install $(INSTALL_PROGRAM) $$p $(DESTDIR)$(bindir)/`echo $$p|sed 's/$(EXEEXT)$$//'|sed '$(transform)'|sed 's/$$/$(EXEEXT)/'`; \
+	  else :; fi; \
+	done
+
+uninstall-binPROGRAMS:
+	@$(NORMAL_UNINSTALL)
+	list='$(bin_PROGRAMS)'; for p in $$list; do \
+	  rm -f $(DESTDIR)$(bindir)/`echo $$p|sed 's/$(EXEEXT)$$//'|sed '$(transform)'|sed 's/$$/$(EXEEXT)/'`; \
+	done
+
+crank: $(crank_OBJECTS) $(crank_DEPENDENCIES)
+	@rm -f crank
+	$(LINK) $(crank_LDFLAGS) $(crank_OBJECTS) $(crank_LDADD) $(LIBS)
+
+# This directory's subdirectories are mostly independent; you can cd
+# into them and run `make' without going through this Makefile.
+# To change the values of `make' variables: instead of editing Makefiles,
+# (1) if the variable is set in `config.status', edit `config.status'
+#     (which will cause the Makefiles to be regenerated when you run `make');
+# (2) otherwise, pass the desired values on the `make' command line.
+
+
+
+all-recursive install-data-recursive install-exec-recursive \
+installdirs-recursive install-recursive uninstall-recursive  \
+check-recursive installcheck-recursive info-recursive dvi-recursive:
+	@set fnord $(MAKEFLAGS); amf=$$2; \
+	dot_seen=no; \
+	target=`echo $@ | sed s/-recursive//`; \
+	list='$(SUBDIRS)'; for subdir in $$list; do \
+	  echo "Making $$target in $$subdir"; \
+	  if test "$$subdir" = "."; then \
+	    dot_seen=yes; \
+	    local_target="$$target-am"; \
+	  else \
+	    local_target="$$target"; \
+	  fi; \
+	  (cd $$subdir && $(MAKE) $(AM_MAKEFLAGS) $$local_target) \
+	   || case "$$amf" in *=*) exit 1;; *k*) fail=yes;; *) exit 1;; esac; \
+	done; \
+	if test "$$dot_seen" = "no"; then \
+	  $(MAKE) $(AM_MAKEFLAGS) "$$target-am" || exit 1; \
+	fi; test -z "$$fail"
+
+mostlyclean-recursive clean-recursive distclean-recursive \
+maintainer-clean-recursive:
+	@set fnord $(MAKEFLAGS); amf=$$2; \
+	dot_seen=no; \
+	rev=''; list='$(SUBDIRS)'; for subdir in $$list; do \
+	  rev="$$subdir $$rev"; \
+	  test "$$subdir" = "." && dot_seen=yes; \
+	done; \
+	test "$$dot_seen" = "no" && rev=". $$rev"; \
+	target=`echo $@ | sed s/-recursive//`; \
+	for subdir in $$rev; do \
+	  echo "Making $$target in $$subdir"; \
+	  if test "$$subdir" = "."; then \
+	    local_target="$$target-am"; \
+	  else \
+	    local_target="$$target"; \
+	  fi; \
+	  (cd $$subdir && $(MAKE) $(AM_MAKEFLAGS) $$local_target) \
+	   || case "$$amf" in *=*) exit 1;; *k*) fail=yes;; *) exit 1;; esac; \
+	done && test -z "$$fail"
+tags-recursive:
+	list='$(SUBDIRS)'; for subdir in $$list; do \
+	  test "$$subdir" = . || (cd $$subdir && $(MAKE) $(AM_MAKEFLAGS) tags); \
+	done
+
+tags: TAGS
+
+ID: $(HEADERS) $(SOURCES) $(LISP)
+	list='$(SOURCES) $(HEADERS)'; \
+	unique=`for i in $$list; do echo $$i; done | \
+	  awk '    { files[$$0] = 1; } \
+	       END { for (i in files) print i; }'`; \
+	here=`pwd` && cd $(srcdir) \
+	  && mkid -f$$here/ID $$unique $(LISP)
+
+TAGS: tags-recursive $(HEADERS) $(SOURCES)  $(TAGS_DEPENDENCIES) $(LISP)
+	tags=; \
+	here=`pwd`; \
+	list='$(SUBDIRS)'; for subdir in $$list; do \
+   if test "$$subdir" = .; then :; else \
+	    test -f $$subdir/TAGS && tags="$$tags -i $$here/$$subdir/TAGS"; \
+   fi; \
+	done; \
+	list='$(SOURCES) $(HEADERS)'; \
+	unique=`for i in $$list; do echo $$i; done | \
+	  awk '    { files[$$0] = 1; } \
+	       END { for (i in files) print i; }'`; \
+	test -z "$(ETAGS_ARGS)$$unique$(LISP)$$tags" \
+	  || (cd $(srcdir) && etags $(ETAGS_ARGS) $$tags  $$unique $(LISP) -o $$here/TAGS)
+
+mostlyclean-tags:
+
+clean-tags:
+
+distclean-tags:
+	-rm -f TAGS ID
+
+maintainer-clean-tags:
+
+distdir = $(top_builddir)/$(PACKAGE)-$(VERSION)/$(subdir)
+
+subdir = src
+
+distdir: $(DISTFILES)
+	@for file in $(DISTFILES); do \
+	  d=$(srcdir); \
+	  if test -d $$d/$$file; then \
+	    cp -pr $$/$$file $(distdir)/$$file; \
+	  else \
+	    test -f $(distdir)/$$file \
+	    || ln $$d/$$file $(distdir)/$$file 2> /dev/null \
+	    || cp -p $$d/$$file $(distdir)/$$file || :; \
+	  fi; \
+	done
+	for subdir in $(SUBDIRS); do \
+	  if test "$$subdir" = .; then :; else \
+	    test -d $(distdir)/$$subdir \
+	    || mkdir $(distdir)/$$subdir \
+	    || exit 1; \
+	    chmod 777 $(distdir)/$$subdir; \
+	    (cd $$subdir && $(MAKE) $(AM_MAKEFLAGS) top_distdir=../$(top_distdir) distdir=../$(distdir)/$$subdir distdir) \
+	      || exit 1; \
+	  fi; \
+	done
+common_constraint_parse.o: common_constraint_parse.c crank.h ../config.h \
+	common_constraint_parse.h componant.h instance.h parameter.h \
+	plugin.h error.h
+common_monoalphabetic.o: common_monoalphabetic.c crank.h ../config.h \
+	common_monoalphabetic.h
+common_transposition_grid.o: common_transposition_grid.c crank.h \
+	../config.h error.h common_transposition_grid.h
+common_trigram.o: common_trigram.c crank.h ../config.h common_trigram.h \
+	error.h
+componant.o: componant.c crank.h ../config.h componant.h instance.h \
+	parameter.h plugin.h error.h
+crank_guile.o: crank_guile.c crank_guile.h
+crank_wrap.o: crank_wrap.c crank.h ../config.h componant.h instance.h \
+	parameter.h plugin.h files.h
+crank_wrap_wrap.o: crank_wrap_wrap.c crank.h ../config.h componant.h \
+	instance.h parameter.h plugin.h crank_wrap.c
+files.o: files.c files.h crank.h ../config.h error.h
+fitness_trigram.o: fitness_trigram.c crank.h ../config.h componant.h \
+	instance.h parameter.h plugin.h error.h common_trigram.h
+globals.o: globals.c crank.h ../config.h componant.h instance.h \
+	parameter.h plugin.h globals.h
+gui_callbacks.o: gui_callbacks.c crank.h ../config.h componant.h \
+	instance.h parameter.h plugin.h gui_init.h gui_callbacks.h \
+	gui_interface.h gui_support.h gui_globals.h gui_textarea.h \
+	globals.h error.h files.h patch.h scheme_interface.h
+gui_generic.o: gui_generic.c crank.h ../config.h componant.h instance.h \
+	parameter.h plugin.h error.h gui_generic_interface.h \
+	gui_support.h gui_generic_callbacks.h
+gui_generic_callbacks.o: gui_generic_callbacks.c ../config.h crank.h \
+	error.h gui_generic_callbacks.h gui_generic_interface.h \
+	componant.h instance.h parameter.h plugin.h gui_globals.h \
+	gui_init.h
+gui_generic_interface.o: gui_generic_interface.c ../config.h \
+	gui_generic_callbacks.h gui_generic_interface.h gui_support.h
+gui_globals.o: gui_globals.c crank.h ../config.h componant.h instance.h \
+	parameter.h plugin.h gui_globals.h globals.h
+gui_init.o: gui_init.c gui_init.h crank.h ../config.h componant.h \
+	instance.h parameter.h plugin.h gui_interface.h gui_support.h \
+	gui_globals.h gui_textarea.h globals.h patch.h error.h
+gui_interface.o: gui_interface.c ../config.h gui_callbacks.h \
+	gui_interface.h gui_support.h
+gui_support.o: gui_support.c ../config.h gui_support.h
+gui_textarea.o: gui_textarea.c gui_textarea.h crank.h ../config.h
+heuristic_hillclimbing.o: heuristic_hillclimbing.c crank.h ../config.h \
+	componant.h instance.h parameter.h plugin.h error.h \
+	common_constraint_parse.h
+heuristic_random.o: heuristic_random.c crank.h ../config.h componant.h \
+	instance.h parameter.h plugin.h error.h \
+	common_constraint_parse.h
+heuristic_simulated_annealing.o: heuristic_simulated_annealing.c crank.h \
+	../config.h componant.h instance.h parameter.h plugin.h error.h \
+	common_constraint_parse.h
+instance.o: instance.c crank.h ../config.h componant.h instance.h \
+	parameter.h plugin.h error.h scheme_interface.h
+main.o: main.c crank.h ../config.h error.h register_componant.h \
+	componant.h instance.h parameter.h plugin.h gui_support.h \
+	gui_interface.h gui_init.h globals.h scheme_interface.h patch.h
+null_componant.o: null_componant.c crank.h ../config.h componant.h \
+	instance.h parameter.h plugin.h
+parameter.o: parameter.c crank.h ../config.h parameter.h error.h
+patch.o: patch.c crank.h ../config.h patch.h componant.h instance.h \
+	parameter.h plugin.h globals.h files.h error.h
+register_componant.o: register_componant.c crank.h ../config.h plugin.h \
+	error.h register_componant.h componant.h instance.h parameter.h
+scheme_interface.o: scheme_interface.c scheme_interface.h crank.h \
+	../config.h error.h componant.h instance.h parameter.h plugin.h \
+	gui_init.h globals.h gui_globals.h
+scheme_pointer_smobs.o: scheme_pointer_smobs.c scheme_pointer_smobs.h
+transform_monoalphabetic.o: transform_monoalphabetic.c crank.h \
+	../config.h componant.h instance.h parameter.h plugin.h \
+	common_monoalphabetic.h
+transform_transposition_grid.o: transform_transposition_grid.c crank.h \
+	../config.h componant.h instance.h parameter.h plugin.h \
+	common_transposition_grid.h
+
+info-am:
+info: info-recursive
+dvi-am:
+dvi: dvi-recursive
+check-am: all-am
+check: check-recursive
+installcheck-am:
+installcheck: installcheck-recursive
+install-exec-am: install-binPROGRAMS
+install-exec: install-exec-recursive
+
+install-data-am: install-pluginLTLIBRARIES
+install-data: install-data-recursive
+
+install-am: all-am
+	@$(MAKE) $(AM_MAKEFLAGS) install-exec-am install-data-am
+install: install-recursive
+uninstall-am: uninstall-pluginLTLIBRARIES uninstall-binPROGRAMS
+uninstall: uninstall-recursive
+all-am: Makefile $(LTLIBRARIES) $(PROGRAMS)
+all-redirect: all-recursive
+install-strip:
+	$(MAKE) $(AM_MAKEFLAGS) AM_INSTALL_PROGRAM_FLAGS=-s install
+installdirs: installdirs-recursive
+installdirs-am:
+	$(mkinstalldirs)  $(DESTDIR)$(plugindir) $(DESTDIR)$(bindir)
+
+
+mostlyclean-generic:
+
+clean-generic:
+
+distclean-generic:
+	-rm -f Makefile $(CONFIG_CLEAN_FILES)
+	-rm -f config.cache config.log stamp-h stamp-h[0-9]*
+
+maintainer-clean-generic:
+mostlyclean-am:  mostlyclean-pluginLTLIBRARIES mostlyclean-compile \
+		mostlyclean-libtool mostlyclean-binPROGRAMS \
+		mostlyclean-tags mostlyclean-generic
+
+mostlyclean: mostlyclean-recursive
+
+clean-am:  clean-pluginLTLIBRARIES clean-compile clean-libtool \
+		clean-binPROGRAMS clean-tags clean-generic \
+		mostlyclean-am
+
+clean: clean-recursive
+
+distclean-am:  distclean-pluginLTLIBRARIES distclean-compile \
+		distclean-libtool distclean-binPROGRAMS distclean-tags \
+		distclean-generic clean-am
+	-rm -f libtool
+
+distclean: distclean-recursive
+
+maintainer-clean-am:  maintainer-clean-pluginLTLIBRARIES \
+		maintainer-clean-compile maintainer-clean-libtool \
+		maintainer-clean-binPROGRAMS maintainer-clean-tags \
+		maintainer-clean-generic distclean-am
+	@echo "This command is intended for maintainers to use;"
+	@echo "it deletes files that may require special tools to rebuild."
+
+maintainer-clean: maintainer-clean-recursive
+
+.PHONY: mostlyclean-pluginLTLIBRARIES distclean-pluginLTLIBRARIES \
+clean-pluginLTLIBRARIES maintainer-clean-pluginLTLIBRARIES \
+uninstall-pluginLTLIBRARIES install-pluginLTLIBRARIES \
+mostlyclean-compile distclean-compile clean-compile \
+maintainer-clean-compile mostlyclean-libtool distclean-libtool \
+clean-libtool maintainer-clean-libtool mostlyclean-binPROGRAMS \
+distclean-binPROGRAMS clean-binPROGRAMS maintainer-clean-binPROGRAMS \
+uninstall-binPROGRAMS install-binPROGRAMS install-data-recursive \
+uninstall-data-recursive install-exec-recursive \
+uninstall-exec-recursive installdirs-recursive uninstalldirs-recursive \
+all-recursive check-recursive installcheck-recursive info-recursive \
+dvi-recursive mostlyclean-recursive distclean-recursive clean-recursive \
+maintainer-clean-recursive tags tags-recursive mostlyclean-tags \
+distclean-tags clean-tags maintainer-clean-tags distdir info-am info \
+dvi-am dvi check check-am installcheck-am installcheck install-exec-am \
+install-exec install-data-am install-data install-am install \
+uninstall-am uninstall all-redirect all-am all installdirs-am \
+installdirs mostlyclean-generic distclean-generic clean-generic \
+maintainer-clean-generic clean mostlyclean distclean maintainer-clean
+
+
+# Tell versions [3.59,3.63) of GNU make to not export all variables.
+# Otherwise a system limit (for SysV at least) may be exceeded.
+.NOEXPORT:

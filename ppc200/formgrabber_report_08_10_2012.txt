@@ -1,0 +1,25 @@
+SkyEye Formgrabber Filtered Logs
+SkyEye v1.07s_build20120924
+Filter Parameters:
+  DATE >= 20121008
+  LOG regex "cvc|cvv|hash|tan|password"
+=========================
+
+url=https://shoppingmall.co.uk/cart/checkout.jsp?JSESSIONID=D5C9548448B34E8C61AF58CFB1D0B006
+date=20121008120422
+card_type=VISA
+card_bin=4189400734492942
+card_expiry_m=09
+card_expiry_y=14
+card_cvc2=519
+cardholder=JOHNNY+WALKER
+
+url=http://www.google.com/search
+date=20121008131845
+q=md5+client-side+hashing+%2bjavascript
+
+url=https://authen.intranet/
+date=20121011015119
+login=Administrator
+password=
+hash=287d3298b652c159e654b61121a858e0

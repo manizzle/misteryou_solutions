@@ -1,0 +1,19 @@
+* check parameter description table of each componant on bootup
+* global resource manager? 
+* merge heuristic_random and _hillclimbing into _simulated_annealing (constant zero and infinte temperatures respectively)
+* parameter value error checking for gui_generic
+* use type specific widgets in gui_generic - spinbox for numbers etc
+* optimise the gui refresh using update_gui
+* fitness.n-gram needs to be able to have a "shortcut" on monoalphabetics, 
+  so it doesn't have to count the entire text everytime
+* user manual
+* componant writing guide
+* global componant browser
+* move over plugins from 0.1.4
+   * steganography
+   * fitness from word matching
+* write new componants
+   * special guis for componants
+   * GA
+* do safety checking on save overwrites etc.
+* componant joining - e.g. transform composition, linear combination of fitness functions etc.

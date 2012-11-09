@@ -1,0 +1,7 @@
+#HOST="93.191.13.142"
+HOST="127.0.0.1"
+PORT = 7777 or int(sys.argv[1])
+
+def send(data):
+    f = socket(AF_INET, SOCK_DGRAM)
+    f.sendto(data, 

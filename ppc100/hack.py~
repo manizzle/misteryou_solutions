@@ -1,0 +1,14 @@
+import requests, lxml.html
+
+def get_equation():
+    page = lxml.html.parse("http://misteryou.ru/ppc100/")
+    return page.xpath("//div//text()")[1].strip().split()
+    
+
+def send_data(answer):
+    payload = {"captchatype" : "hugecaptcha",
+               "trueanswer" : "26F717F0D0BBA86846A2291D",
+               "answer"  : str(answer)
+               }
+    req = requests.post("misteryou.ru/ppc100/", data=payload)
+    print req.text

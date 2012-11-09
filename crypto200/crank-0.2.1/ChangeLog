@@ -1,0 +1,18 @@
+v0.2.1 (21th August 2001)
+
+* Added heuristic log window
+* heuristic_hillclimbing produces log messages
+* Main window is ghosted out better during heuristic
+* Icons placed in notebook headers
+* The componant GUI no longer redraws everything after a rebuild_componant_gui() call
+* heuristic componants now pass out the fitness to improvement_found(), rather than let it be recalculated
+* converted all "floats" to "doubles"
+* added heuristic_simulated_annealing
+* 'default' field added to gui_generic
+* guile interface introduced via SWIG
+* dump_/instantiate_ parameters rewrote to produce scheme code
+* Introduced patches to group together settings
+	
+v0.2.0 (15th August 2001)
+
+* First release of the 0.2.x versions

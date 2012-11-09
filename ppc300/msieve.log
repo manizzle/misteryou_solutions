@@ -1,0 +1,649 @@
+Wed Oct 10 16:13:32 2012  
+Wed Oct 10 16:13:32 2012  
+Wed Oct 10 16:13:32 2012  Msieve v. 1.50 (SVN Unversioned directory)
+Wed Oct 10 16:13:32 2012  random seeds: a747152e 984fa5bb
+Wed Oct 10 16:13:32 2012  factoring 230875432830233685555797040317541026293 (39 digits)
+Wed Oct 10 16:13:32 2012  searching for 15-digit factors
+Wed Oct 10 16:13:33 2012  commencing quadratic sieve (39-digit input)
+Wed Oct 10 16:13:33 2012  using multiplier of 13
+Wed Oct 10 16:13:33 2012  using 32kb Intel Core sieve core
+Wed Oct 10 16:13:33 2012  sieve interval: 4 blocks of size 32768
+Wed Oct 10 16:13:33 2012  processing polynomials in batches of 51
+Wed Oct 10 16:13:33 2012  using a sieve bound of 7283 (450 primes)
+Wed Oct 10 16:13:33 2012  using large prime bound of 291320 (18 bits)
+Wed Oct 10 16:13:33 2012  polynomial 'A' values have 5 factors
+Wed Oct 10 16:13:33 2012  584 relations (281 full + 303 combined from 2084 partial), need 546
+Wed Oct 10 16:13:33 2012  begin with 2365 relations
+Wed Oct 10 16:13:33 2012  reduce to 837 relations in 2 passes
+Wed Oct 10 16:13:33 2012  attempting to read 837 relations
+Wed Oct 10 16:13:33 2012  recovered 837 relations
+Wed Oct 10 16:13:33 2012  recovered 128 polynomials
+Wed Oct 10 16:13:33 2012  attempting to build 584 cycles
+Wed Oct 10 16:13:33 2012  found 584 cycles in 1 passes
+Wed Oct 10 16:13:33 2012  distribution of cycle lengths:
+Wed Oct 10 16:13:33 2012     length 1 : 281
+Wed Oct 10 16:13:33 2012     length 2 : 303
+Wed Oct 10 16:13:33 2012  largest cycle: 2 relations
+Wed Oct 10 16:13:33 2012  matrix is 450 x 584 (0.1 MB) with weight 10842 (18.57/col)
+Wed Oct 10 16:13:33 2012  sparse part has weight 10842 (18.57/col)
+Wed Oct 10 16:13:33 2012  filtering completed in 3 passes
+Wed Oct 10 16:13:33 2012  matrix is 425 x 489 (0.0 MB) with weight 8534 (17.45/col)
+Wed Oct 10 16:13:33 2012  sparse part has weight 8534 (17.45/col)
+Wed Oct 10 16:13:33 2012  commencing Lanczos iteration
+Wed Oct 10 16:13:33 2012  memory use: 0.1 MB
+Wed Oct 10 16:13:33 2012  lanczos halted after 8 iterations (dim = 420)
+Wed Oct 10 16:13:33 2012  recovered 61 nontrivial dependencies
+Wed Oct 10 16:13:33 2012  prp20 factor: 14307413220657684707
+Wed Oct 10 16:13:33 2012  prp20 factor: 16136769747929372999
+Wed Oct 10 16:13:33 2012  elapsed time 00:00:01
+Wed Oct 10 16:13:43 2012  
+Wed Oct 10 16:13:43 2012  
+Wed Oct 10 16:13:43 2012  Msieve v. 1.50 (SVN Unversioned directory)
+Wed Oct 10 16:13:43 2012  random seeds: 8496bb8a a2066d72
+Wed Oct 10 16:13:43 2012  factoring 280635949913181511744346121026633124397 (39 digits)
+Wed Oct 10 16:13:43 2012  searching for 15-digit factors
+Wed Oct 10 16:13:43 2012  commencing quadratic sieve (39-digit input)
+Wed Oct 10 16:13:43 2012  using multiplier of 37
+Wed Oct 10 16:13:43 2012  using 32kb Intel Core sieve core
+Wed Oct 10 16:13:43 2012  sieve interval: 4 blocks of size 32768
+Wed Oct 10 16:13:43 2012  processing polynomials in batches of 51
+Wed Oct 10 16:13:43 2012  using a sieve bound of 6761 (450 primes)
+Wed Oct 10 16:13:43 2012  using large prime bound of 270440 (18 bits)
+Wed Oct 10 16:13:43 2012  polynomial 'A' values have 5 factors
+Wed Oct 10 16:13:43 2012  615 relations (264 full + 351 combined from 2211 partial), need 546
+Wed Oct 10 16:13:43 2012  begin with 2475 relations
+Wed Oct 10 16:13:43 2012  reduce to 905 relations in 2 passes
+Wed Oct 10 16:13:43 2012  attempting to read 905 relations
+Wed Oct 10 16:13:43 2012  recovered 905 relations
+Wed Oct 10 16:13:43 2012  recovered 128 polynomials
+Wed Oct 10 16:13:43 2012  attempting to build 615 cycles
+Wed Oct 10 16:13:43 2012  found 615 cycles in 1 passes
+Wed Oct 10 16:13:43 2012  distribution of cycle lengths:
+Wed Oct 10 16:13:43 2012     length 1 : 264
+Wed Oct 10 16:13:43 2012     length 2 : 351
+Wed Oct 10 16:13:43 2012  largest cycle: 2 relations
+Wed Oct 10 16:13:43 2012  matrix is 450 x 615 (0.1 MB) with weight 11815 (19.21/col)
+Wed Oct 10 16:13:43 2012  sparse part has weight 11815 (19.21/col)
+Wed Oct 10 16:13:43 2012  filtering completed in 3 passes
+Wed Oct 10 16:13:43 2012  matrix is 431 x 495 (0.0 MB) with weight 8819 (17.82/col)
+Wed Oct 10 16:13:43 2012  sparse part has weight 8819 (17.82/col)
+Wed Oct 10 16:13:43 2012  commencing Lanczos iteration
+Wed Oct 10 16:13:43 2012  memory use: 0.1 MB
+Wed Oct 10 16:13:43 2012  lanczos halted after 8 iterations (dim = 426)
+Wed Oct 10 16:13:43 2012  recovered 61 nontrivial dependencies
+Wed Oct 10 16:13:43 2012  prp20 factor: 15518008767367129103
+Wed Oct 10 16:13:43 2012  prp20 factor: 18084533532635434499
+Wed Oct 10 16:13:43 2012  elapsed time 00:00:00
+Wed Oct 10 16:14:18 2012  
+Wed Oct 10 16:14:18 2012  
+Wed Oct 10 16:14:18 2012  Msieve v. 1.50 (SVN Unversioned directory)
+Wed Oct 10 16:14:18 2012  random seeds: fafd7b18 442bf7f5
+Wed Oct 10 16:14:18 2012  factoring 203345519945309242000579510962233545057 (39 digits)
+Wed Oct 10 16:14:18 2012  searching for 15-digit factors
+Wed Oct 10 16:14:18 2012  commencing quadratic sieve (39-digit input)
+Wed Oct 10 16:14:18 2012  using multiplier of 73
+Wed Oct 10 16:14:18 2012  using 32kb Intel Core sieve core
+Wed Oct 10 16:14:18 2012  sieve interval: 4 blocks of size 32768
+Wed Oct 10 16:14:18 2012  processing polynomials in batches of 51
+Wed Oct 10 16:14:18 2012  using a sieve bound of 7177 (450 primes)
+Wed Oct 10 16:14:18 2012  using large prime bound of 287080 (18 bits)
+Wed Oct 10 16:14:18 2012  polynomial 'A' values have 5 factors
+Wed Oct 10 16:14:18 2012  682 relations (340 full + 342 combined from 2280 partial), need 546
+Wed Oct 10 16:14:18 2012  begin with 2620 relations
+Wed Oct 10 16:14:18 2012  reduce to 965 relations in 2 passes
+Wed Oct 10 16:14:18 2012  attempting to read 965 relations
+Wed Oct 10 16:14:18 2012  recovered 965 relations
+Wed Oct 10 16:14:18 2012  recovered 96 polynomials
+Wed Oct 10 16:14:18 2012  attempting to build 682 cycles
+Wed Oct 10 16:14:18 2012  found 682 cycles in 1 passes
+Wed Oct 10 16:14:18 2012  distribution of cycle lengths:
+Wed Oct 10 16:14:18 2012     length 1 : 340
+Wed Oct 10 16:14:18 2012     length 2 : 342
+Wed Oct 10 16:14:18 2012  largest cycle: 2 relations
+Wed Oct 10 16:14:18 2012  matrix is 450 x 682 (0.1 MB) with weight 12843 (18.83/col)
+Wed Oct 10 16:14:18 2012  sparse part has weight 12843 (18.83/col)
+Wed Oct 10 16:14:18 2012  filtering completed in 3 passes
+Wed Oct 10 16:14:18 2012  matrix is 418 x 482 (0.0 MB) with weight 7996 (16.59/col)
+Wed Oct 10 16:14:18 2012  sparse part has weight 7996 (16.59/col)
+Wed Oct 10 16:14:18 2012  commencing Lanczos iteration
+Wed Oct 10 16:14:18 2012  memory use: 0.0 MB
+Wed Oct 10 16:14:18 2012  lanczos halted after 8 iterations (dim = 413)
+Wed Oct 10 16:14:18 2012  recovered 61 nontrivial dependencies
+Wed Oct 10 16:14:18 2012  prp20 factor: 14066976331756563239
+Wed Oct 10 16:14:18 2012  prp20 factor: 14455524424694699063
+Wed Oct 10 16:14:18 2012  elapsed time 00:00:00
+Wed Oct 10 16:16:04 2012  
+Wed Oct 10 16:16:04 2012  
+Wed Oct 10 16:16:04 2012  Msieve v. 1.50 (SVN Unversioned directory)
+Wed Oct 10 16:16:04 2012  random seeds: 38962674 829b55df
+Wed Oct 10 16:16:04 2012  factoring 247551813660462436477553662666810000933 (39 digits)
+Wed Oct 10 16:16:04 2012  searching for 15-digit factors
+Wed Oct 10 16:16:04 2012  commencing quadratic sieve (39-digit input)
+Wed Oct 10 16:16:04 2012  using multiplier of 3
+Wed Oct 10 16:16:04 2012  using 32kb Intel Core sieve core
+Wed Oct 10 16:16:04 2012  sieve interval: 4 blocks of size 32768
+Wed Oct 10 16:16:04 2012  processing polynomials in batches of 51
+Wed Oct 10 16:16:04 2012  using a sieve bound of 6961 (450 primes)
+Wed Oct 10 16:16:04 2012  using large prime bound of 278440 (18 bits)
+Wed Oct 10 16:16:04 2012  polynomial 'A' values have 5 factors
+Wed Oct 10 16:16:04 2012  688 relations (266 full + 422 combined from 2581 partial), need 546
+Wed Oct 10 16:16:04 2012  begin with 2847 relations
+Wed Oct 10 16:16:04 2012  reduce to 1043 relations in 2 passes
+Wed Oct 10 16:16:04 2012  attempting to read 1043 relations
+Wed Oct 10 16:16:04 2012  recovered 1043 relations
+Wed Oct 10 16:16:04 2012  recovered 128 polynomials
+Wed Oct 10 16:16:04 2012  attempting to build 688 cycles
+Wed Oct 10 16:16:04 2012  found 688 cycles in 1 passes
+Wed Oct 10 16:16:04 2012  distribution of cycle lengths:
+Wed Oct 10 16:16:04 2012     length 1 : 266
+Wed Oct 10 16:16:04 2012     length 2 : 422
+Wed Oct 10 16:16:04 2012  largest cycle: 2 relations
+Wed Oct 10 16:16:04 2012  matrix is 450 x 688 (0.1 MB) with weight 13877 (20.17/col)
+Wed Oct 10 16:16:04 2012  sparse part has weight 13877 (20.17/col)
+Wed Oct 10 16:16:04 2012  filtering completed in 3 passes
+Wed Oct 10 16:16:04 2012  matrix is 438 x 502 (0.1 MB) with weight 9112 (18.15/col)
+Wed Oct 10 16:16:04 2012  sparse part has weight 9112 (18.15/col)
+Wed Oct 10 16:16:04 2012  commencing Lanczos iteration
+Wed Oct 10 16:16:04 2012  memory use: 0.1 MB
+Wed Oct 10 16:16:04 2012  lanczos halted after 8 iterations (dim = 434)
+Wed Oct 10 16:16:04 2012  recovered 63 nontrivial dependencies
+Wed Oct 10 16:16:04 2012  prp20 factor: 15540762511342613387
+Wed Oct 10 16:16:04 2012  prp20 factor: 15929193530869785359
+Wed Oct 10 16:16:04 2012  elapsed time 00:00:00
+Wed Oct 10 16:16:36 2012  
+Wed Oct 10 16:16:36 2012  
+Wed Oct 10 16:16:36 2012  Msieve v. 1.50 (SVN Unversioned directory)
+Wed Oct 10 16:16:36 2012  random seeds: 670541b5 80623741
+Wed Oct 10 16:16:36 2012  factoring 278435779340902068496628102186868372181 (39 digits)
+Wed Oct 10 16:16:36 2012  searching for 15-digit factors
+Wed Oct 10 16:16:36 2012  commencing quadratic sieve (39-digit input)
+Wed Oct 10 16:16:36 2012  using multiplier of 1
+Wed Oct 10 16:16:36 2012  using 32kb Intel Core sieve core
+Wed Oct 10 16:16:36 2012  sieve interval: 4 blocks of size 32768
+Wed Oct 10 16:16:36 2012  processing polynomials in batches of 51
+Wed Oct 10 16:16:36 2012  using a sieve bound of 7039 (450 primes)
+Wed Oct 10 16:16:36 2012  using large prime bound of 281560 (18 bits)
+Wed Oct 10 16:16:36 2012  polynomial 'A' values have 5 factors
+Wed Oct 10 16:16:36 2012  771 relations (333 full + 438 combined from 2523 partial), need 546
+Wed Oct 10 16:16:36 2012  begin with 2856 relations
+Wed Oct 10 16:16:36 2012  reduce to 1119 relations in 2 passes
+Wed Oct 10 16:16:36 2012  attempting to read 1119 relations
+Wed Oct 10 16:16:36 2012  recovered 1119 relations
+Wed Oct 10 16:16:36 2012  recovered 64 polynomials
+Wed Oct 10 16:16:36 2012  attempting to build 771 cycles
+Wed Oct 10 16:16:36 2012  found 771 cycles in 1 passes
+Wed Oct 10 16:16:36 2012  distribution of cycle lengths:
+Wed Oct 10 16:16:36 2012     length 1 : 333
+Wed Oct 10 16:16:36 2012     length 2 : 438
+Wed Oct 10 16:16:36 2012  largest cycle: 2 relations
+Wed Oct 10 16:16:36 2012  matrix is 450 x 771 (0.1 MB) with weight 13936 (18.08/col)
+Wed Oct 10 16:16:36 2012  sparse part has weight 13936 (18.08/col)
+Wed Oct 10 16:16:36 2012  filtering completed in 4 passes
+Wed Oct 10 16:16:36 2012  matrix is 418 x 482 (0.0 MB) with weight 7391 (15.33/col)
+Wed Oct 10 16:16:36 2012  sparse part has weight 7391 (15.33/col)
+Wed Oct 10 16:16:36 2012  commencing Lanczos iteration
+Wed Oct 10 16:16:36 2012  memory use: 0.0 MB
+Wed Oct 10 16:16:36 2012  lanczos halted after 8 iterations (dim = 416)
+Wed Oct 10 16:16:36 2012  recovered 63 nontrivial dependencies
+Wed Oct 10 16:16:36 2012  prp20 factor: 15531782479223724167
+Wed Oct 10 16:16:36 2012  prp20 factor: 17926839994917199043
+Wed Oct 10 16:16:36 2012  elapsed time 00:00:00
+Wed Oct 10 16:16:47 2012  
+Wed Oct 10 16:16:47 2012  
+Wed Oct 10 16:16:47 2012  Msieve v. 1.50 (SVN Unversioned directory)
+Wed Oct 10 16:16:47 2012  random seeds: 112123f6 bedc193a
+Wed Oct 10 16:16:47 2012  factoring 229709269767636129991512723881414180149 (39 digits)
+Wed Oct 10 16:16:47 2012  searching for 15-digit factors
+Wed Oct 10 16:16:47 2012  commencing quadratic sieve (39-digit input)
+Wed Oct 10 16:16:47 2012  using multiplier of 1
+Wed Oct 10 16:16:47 2012  using 32kb Intel Core sieve core
+Wed Oct 10 16:16:47 2012  sieve interval: 4 blocks of size 32768
+Wed Oct 10 16:16:47 2012  processing polynomials in batches of 51
+Wed Oct 10 16:16:47 2012  using a sieve bound of 6803 (450 primes)
+Wed Oct 10 16:16:47 2012  using large prime bound of 272120 (18 bits)
+Wed Oct 10 16:16:47 2012  polynomial 'A' values have 5 factors
+Wed Oct 10 16:16:47 2012  615 relations (238 full + 377 combined from 2329 partial), need 546
+Wed Oct 10 16:16:47 2012  begin with 2567 relations
+Wed Oct 10 16:16:47 2012  reduce to 929 relations in 2 passes
+Wed Oct 10 16:16:47 2012  attempting to read 929 relations
+Wed Oct 10 16:16:47 2012  recovered 929 relations
+Wed Oct 10 16:16:47 2012  recovered 128 polynomials
+Wed Oct 10 16:16:47 2012  attempting to build 615 cycles
+Wed Oct 10 16:16:47 2012  found 615 cycles in 1 passes
+Wed Oct 10 16:16:47 2012  distribution of cycle lengths:
+Wed Oct 10 16:16:47 2012     length 1 : 238
+Wed Oct 10 16:16:47 2012     length 2 : 377
+Wed Oct 10 16:16:47 2012  largest cycle: 2 relations
+Wed Oct 10 16:16:47 2012  matrix is 450 x 615 (0.1 MB) with weight 11434 (18.59/col)
+Wed Oct 10 16:16:47 2012  sparse part has weight 11434 (18.59/col)
+Wed Oct 10 16:16:47 2012  filtering completed in 4 passes
+Wed Oct 10 16:16:47 2012  matrix is 427 x 491 (0.0 MB) with weight 8513 (17.34/col)
+Wed Oct 10 16:16:47 2012  sparse part has weight 8513 (17.34/col)
+Wed Oct 10 16:16:47 2012  commencing Lanczos iteration
+Wed Oct 10 16:16:47 2012  memory use: 0.1 MB
+Wed Oct 10 16:16:47 2012  lanczos halted after 8 iterations (dim = 426)
+Wed Oct 10 16:16:47 2012  recovered 64 nontrivial dependencies
+Wed Oct 10 16:16:47 2012  prp20 factor: 14359471131464059103
+Wed Oct 10 16:16:47 2012  prp20 factor: 15997056414167218283
+Wed Oct 10 16:16:47 2012  elapsed time 00:00:00
+Wed Oct 10 16:16:56 2012  
+Wed Oct 10 16:16:56 2012  
+Wed Oct 10 16:16:56 2012  Msieve v. 1.50 (SVN Unversioned directory)
+Wed Oct 10 16:16:56 2012  random seeds: 5616f424 d55e1d90
+Wed Oct 10 16:16:56 2012  factoring 44444 (5 digits)
+Wed Oct 10 16:16:56 2012  p1 factor: 2
+Wed Oct 10 16:16:56 2012  p1 factor: 2
+Wed Oct 10 16:16:56 2012  p2 factor: 41
+Wed Oct 10 16:16:56 2012  p3 factor: 271
+Wed Oct 10 16:16:56 2012  elapsed time 00:00:00
+Wed Oct 10 16:17:02 2012  
+Wed Oct 10 16:17:02 2012  
+Wed Oct 10 16:17:02 2012  Msieve v. 1.50 (SVN Unversioned directory)
+Wed Oct 10 16:17:02 2012  random seeds: bdd3475a bb3a1cd1
+Wed Oct 10 16:17:02 2012  factoring 44444 (5 digits)
+Wed Oct 10 16:17:02 2012  p1 factor: 2
+Wed Oct 10 16:17:02 2012  p1 factor: 2
+Wed Oct 10 16:17:02 2012  p2 factor: 41
+Wed Oct 10 16:17:02 2012  p3 factor: 271
+Wed Oct 10 16:17:02 2012  elapsed time 00:00:00
+Wed Oct 10 16:17:22 2012  
+Wed Oct 10 16:17:22 2012  
+Wed Oct 10 16:17:22 2012  Msieve v. 1.50 (SVN Unversioned directory)
+Wed Oct 10 16:17:22 2012  random seeds: 4de17817 80f42b85
+Wed Oct 10 16:17:22 2012  factoring 44444 (5 digits)
+Wed Oct 10 16:17:22 2012  p1 factor: 2
+Wed Oct 10 16:17:22 2012  p1 factor: 2
+Wed Oct 10 16:17:22 2012  p2 factor: 41
+Wed Oct 10 16:17:22 2012  p3 factor: 271
+Wed Oct 10 16:17:22 2012  elapsed time 00:00:00
+Wed Oct 10 16:17:26 2012  
+Wed Oct 10 16:17:26 2012  
+Wed Oct 10 16:17:26 2012  Msieve v. 1.50 (SVN Unversioned directory)
+Wed Oct 10 16:17:26 2012  random seeds: 9db305ad a3a4c8aa
+Wed Oct 10 16:17:26 2012  factoring 269057289479262059919949860448343077657 (39 digits)
+Wed Oct 10 16:17:26 2012  searching for 15-digit factors
+Wed Oct 10 16:17:26 2012  commencing quadratic sieve (39-digit input)
+Wed Oct 10 16:17:26 2012  using multiplier of 1
+Wed Oct 10 16:17:26 2012  using 32kb Intel Core sieve core
+Wed Oct 10 16:17:26 2012  sieve interval: 4 blocks of size 32768
+Wed Oct 10 16:17:26 2012  processing polynomials in batches of 51
+Wed Oct 10 16:17:26 2012  using a sieve bound of 7151 (450 primes)
+Wed Oct 10 16:17:26 2012  using large prime bound of 286040 (18 bits)
+Wed Oct 10 16:17:26 2012  polynomial 'A' values have 5 factors
+Wed Oct 10 16:17:26 2012  583 relations (270 full + 313 combined from 2183 partial), need 546
+Wed Oct 10 16:17:26 2012  begin with 2453 relations
+Wed Oct 10 16:17:26 2012  reduce to 843 relations in 2 passes
+Wed Oct 10 16:17:26 2012  attempting to read 843 relations
+Wed Oct 10 16:17:26 2012  recovered 843 relations
+Wed Oct 10 16:17:26 2012  recovered 96 polynomials
+Wed Oct 10 16:17:26 2012  attempting to build 583 cycles
+Wed Oct 10 16:17:26 2012  found 583 cycles in 1 passes
+Wed Oct 10 16:17:26 2012  distribution of cycle lengths:
+Wed Oct 10 16:17:26 2012     length 1 : 270
+Wed Oct 10 16:17:26 2012     length 2 : 313
+Wed Oct 10 16:17:26 2012  largest cycle: 2 relations
+Wed Oct 10 16:17:26 2012  matrix is 450 x 583 (0.1 MB) with weight 10738 (18.42/col)
+Wed Oct 10 16:17:26 2012  sparse part has weight 10738 (18.42/col)
+Wed Oct 10 16:17:26 2012  filtering completed in 3 passes
+Wed Oct 10 16:17:26 2012  matrix is 428 x 492 (0.0 MB) with weight 8496 (17.27/col)
+Wed Oct 10 16:17:26 2012  sparse part has weight 8496 (17.27/col)
+Wed Oct 10 16:17:26 2012  commencing Lanczos iteration
+Wed Oct 10 16:17:26 2012  memory use: 0.1 MB
+Wed Oct 10 16:17:26 2012  lanczos halted after 8 iterations (dim = 426)
+Wed Oct 10 16:17:26 2012  recovered 63 nontrivial dependencies
+Wed Oct 10 16:17:26 2012  prp20 factor: 15711981260221903883
+Wed Oct 10 16:17:26 2012  prp20 factor: 17124338746535782379
+Wed Oct 10 16:17:26 2012  elapsed time 00:00:00
+Wed Oct 10 16:18:01 2012  
+Wed Oct 10 16:18:01 2012  
+Wed Oct 10 16:18:01 2012  Msieve v. 1.50 (SVN Unversioned directory)
+Wed Oct 10 16:18:01 2012  random seeds: 15661a40 9f98b46c
+Wed Oct 10 16:18:01 2012  factoring 228030484806047623827539075715958505593 (39 digits)
+Wed Oct 10 16:18:01 2012  searching for 15-digit factors
+Wed Oct 10 16:18:01 2012  commencing quadratic sieve (39-digit input)
+Wed Oct 10 16:18:01 2012  using multiplier of 1
+Wed Oct 10 16:18:01 2012  using 32kb Intel Core sieve core
+Wed Oct 10 16:18:01 2012  sieve interval: 4 blocks of size 32768
+Wed Oct 10 16:18:01 2012  processing polynomials in batches of 51
+Wed Oct 10 16:18:01 2012  using a sieve bound of 7127 (450 primes)
+Wed Oct 10 16:18:01 2012  using large prime bound of 285080 (18 bits)
+Wed Oct 10 16:18:01 2012  polynomial 'A' values have 5 factors
+Wed Oct 10 16:18:02 2012  697 relations (277 full + 420 combined from 2654 partial), need 546
+Wed Oct 10 16:18:02 2012  begin with 2931 relations
+Wed Oct 10 16:18:02 2012  reduce to 1043 relations in 2 passes
+Wed Oct 10 16:18:02 2012  attempting to read 1043 relations
+Wed Oct 10 16:18:02 2012  recovered 1043 relations
+Wed Oct 10 16:18:02 2012  recovered 176 polynomials
+Wed Oct 10 16:18:02 2012  attempting to build 697 cycles
+Wed Oct 10 16:18:02 2012  found 697 cycles in 1 passes
+Wed Oct 10 16:18:02 2012  distribution of cycle lengths:
+Wed Oct 10 16:18:02 2012     length 1 : 277
+Wed Oct 10 16:18:02 2012     length 2 : 420
+Wed Oct 10 16:18:02 2012  largest cycle: 2 relations
+Wed Oct 10 16:18:02 2012  matrix is 450 x 697 (0.1 MB) with weight 12968 (18.61/col)
+Wed Oct 10 16:18:02 2012  sparse part has weight 12968 (18.61/col)
+Wed Oct 10 16:18:02 2012  filtering completed in 3 passes
+Wed Oct 10 16:18:02 2012  matrix is 438 x 502 (0.0 MB) with weight 8358 (16.65/col)
+Wed Oct 10 16:18:02 2012  sparse part has weight 8358 (16.65/col)
+Wed Oct 10 16:18:02 2012  commencing Lanczos iteration
+Wed Oct 10 16:18:02 2012  memory use: 0.1 MB
+Wed Oct 10 16:18:02 2012  lanczos halted after 8 iterations (dim = 434)
+Wed Oct 10 16:18:02 2012  recovered 61 nontrivial dependencies
+Wed Oct 10 16:18:02 2012  prp20 factor: 14049100678019239787
+Wed Oct 10 16:18:02 2012  prp20 factor: 16230966666985069739
+Wed Oct 10 16:18:02 2012  elapsed time 00:00:01
+Wed Oct 10 16:18:33 2012  
+Wed Oct 10 16:18:33 2012  
+Wed Oct 10 16:18:33 2012  Msieve v. 1.50 (SVN Unversioned directory)
+Wed Oct 10 16:18:33 2012  random seeds: cbc94594 9e69375a
+Wed Oct 10 16:18:33 2012  factoring 259071971655901472268470244180433357477 (39 digits)
+Wed Oct 10 16:18:33 2012  searching for 15-digit factors
+Wed Oct 10 16:18:33 2012  commencing quadratic sieve (39-digit input)
+Wed Oct 10 16:18:33 2012  using multiplier of 1
+Wed Oct 10 16:18:33 2012  using 32kb Intel Core sieve core
+Wed Oct 10 16:18:33 2012  sieve interval: 4 blocks of size 32768
+Wed Oct 10 16:18:33 2012  processing polynomials in batches of 51
+Wed Oct 10 16:18:33 2012  using a sieve bound of 6959 (450 primes)
+Wed Oct 10 16:18:33 2012  using large prime bound of 278360 (18 bits)
+Wed Oct 10 16:18:33 2012  polynomial 'A' values have 5 factors
+Wed Oct 10 16:18:33 2012  813 relations (304 full + 509 combined from 2833 partial), need 546
+Wed Oct 10 16:18:33 2012  begin with 3137 relations
+Wed Oct 10 16:18:33 2012  reduce to 1224 relations in 2 passes
+Wed Oct 10 16:18:33 2012  attempting to read 1224 relations
+Wed Oct 10 16:18:33 2012  recovered 1224 relations
+Wed Oct 10 16:18:33 2012  recovered 96 polynomials
+Wed Oct 10 16:18:33 2012  attempting to build 813 cycles
+Wed Oct 10 16:18:33 2012  found 813 cycles in 1 passes
+Wed Oct 10 16:18:33 2012  distribution of cycle lengths:
+Wed Oct 10 16:18:33 2012     length 1 : 304
+Wed Oct 10 16:18:33 2012     length 2 : 509
+Wed Oct 10 16:18:33 2012  largest cycle: 2 relations
+Wed Oct 10 16:18:33 2012  matrix is 450 x 813 (0.1 MB) with weight 15283 (18.80/col)
+Wed Oct 10 16:18:33 2012  sparse part has weight 15283 (18.80/col)
+Wed Oct 10 16:18:33 2012  filtering completed in 4 passes
+Wed Oct 10 16:18:33 2012  matrix is 419 x 483 (0.0 MB) with weight 7628 (15.79/col)
+Wed Oct 10 16:18:33 2012  sparse part has weight 7628 (15.79/col)
+Wed Oct 10 16:18:33 2012  commencing Lanczos iteration
+Wed Oct 10 16:18:33 2012  memory use: 0.0 MB
+Wed Oct 10 16:18:33 2012  lanczos halted after 8 iterations (dim = 418)
+Wed Oct 10 16:18:33 2012  recovered 64 nontrivial dependencies
+Wed Oct 10 16:18:33 2012  prp20 factor: 14756803455364686263
+Wed Oct 10 16:18:33 2012  prp20 factor: 17556103694104462979
+Wed Oct 10 16:18:33 2012  elapsed time 00:00:00
+Wed Oct 10 16:19:09 2012  
+Wed Oct 10 16:19:09 2012  
+Wed Oct 10 16:19:09 2012  Msieve v. 1.50 (SVN Unversioned directory)
+Wed Oct 10 16:19:09 2012  random seeds: 041be8d8 f05d8f8d
+Wed Oct 10 16:19:09 2012  factoring 313902309808474641948331791064979410117 (39 digits)
+Wed Oct 10 16:19:09 2012  searching for 15-digit factors
+Wed Oct 10 16:19:09 2012  commencing quadratic sieve (39-digit input)
+Wed Oct 10 16:19:09 2012  using multiplier of 5
+Wed Oct 10 16:19:09 2012  using 32kb Intel Core sieve core
+Wed Oct 10 16:19:09 2012  sieve interval: 4 blocks of size 32768
+Wed Oct 10 16:19:09 2012  processing polynomials in batches of 51
+Wed Oct 10 16:19:09 2012  using a sieve bound of 7213 (450 primes)
+Wed Oct 10 16:19:09 2012  using large prime bound of 288520 (18 bits)
+Wed Oct 10 16:19:09 2012  polynomial 'A' values have 5 factors
+Wed Oct 10 16:19:09 2012  623 relations (268 full + 355 combined from 2350 partial), need 546
+Wed Oct 10 16:19:09 2012  begin with 2618 relations
+Wed Oct 10 16:19:09 2012  reduce to 925 relations in 2 passes
+Wed Oct 10 16:19:09 2012  attempting to read 925 relations
+Wed Oct 10 16:19:09 2012  recovered 925 relations
+Wed Oct 10 16:19:09 2012  recovered 176 polynomials
+Wed Oct 10 16:19:09 2012  attempting to build 623 cycles
+Wed Oct 10 16:19:09 2012  found 623 cycles in 1 passes
+Wed Oct 10 16:19:09 2012  distribution of cycle lengths:
+Wed Oct 10 16:19:09 2012     length 1 : 268
+Wed Oct 10 16:19:09 2012     length 2 : 355
+Wed Oct 10 16:19:09 2012  largest cycle: 2 relations
+Wed Oct 10 16:19:09 2012  matrix is 450 x 623 (0.1 MB) with weight 11952 (19.18/col)
+Wed Oct 10 16:19:09 2012  sparse part has weight 11952 (19.18/col)
+Wed Oct 10 16:19:09 2012  filtering completed in 3 passes
+Wed Oct 10 16:19:09 2012  matrix is 437 x 501 (0.0 MB) with weight 8944 (17.85/col)
+Wed Oct 10 16:19:09 2012  sparse part has weight 8944 (17.85/col)
+Wed Oct 10 16:19:09 2012  commencing Lanczos iteration
+Wed Oct 10 16:19:09 2012  memory use: 0.1 MB
+Wed Oct 10 16:19:09 2012  lanczos halted after 8 iterations (dim = 435)
+Wed Oct 10 16:19:09 2012  recovered 64 nontrivial dependencies
+Wed Oct 10 16:19:09 2012  prp20 factor: 17460271669834439879
+Wed Oct 10 16:19:09 2012  prp20 factor: 17978088528301295123
+Wed Oct 10 16:19:09 2012  elapsed time 00:00:00
+Wed Oct 10 16:19:17 2012  
+Wed Oct 10 16:19:17 2012  
+Wed Oct 10 16:19:17 2012  Msieve v. 1.50 (SVN Unversioned directory)
+Wed Oct 10 16:19:17 2012  random seeds: 961b043a 7a927870
+Wed Oct 10 16:19:17 2012  factoring 252 (3 digits)
+Wed Oct 10 16:19:17 2012  p1 factor: 2
+Wed Oct 10 16:19:17 2012  p1 factor: 2
+Wed Oct 10 16:19:17 2012  p1 factor: 3
+Wed Oct 10 16:19:17 2012  p1 factor: 3
+Wed Oct 10 16:19:17 2012  p1 factor: 7
+Wed Oct 10 16:19:17 2012  elapsed time 00:00:00
+Wed Oct 10 16:19:31 2012  
+Wed Oct 10 16:19:31 2012  
+Wed Oct 10 16:19:31 2012  Msieve v. 1.50 (SVN Unversioned directory)
+Wed Oct 10 16:19:31 2012  random seeds: e341c619 cccbe222
+Wed Oct 10 16:19:31 2012  factoring 256113052549929837749767039472000591353 (39 digits)
+Wed Oct 10 16:19:31 2012  searching for 15-digit factors
+Wed Oct 10 16:19:32 2012  commencing quadratic sieve (39-digit input)
+Wed Oct 10 16:19:32 2012  using multiplier of 1
+Wed Oct 10 16:19:32 2012  using 32kb Intel Core sieve core
+Wed Oct 10 16:19:32 2012  sieve interval: 4 blocks of size 32768
+Wed Oct 10 16:19:32 2012  processing polynomials in batches of 51
+Wed Oct 10 16:19:32 2012  using a sieve bound of 6737 (450 primes)
+Wed Oct 10 16:19:32 2012  using large prime bound of 269480 (18 bits)
+Wed Oct 10 16:19:32 2012  polynomial 'A' values have 5 factors
+Wed Oct 10 16:19:32 2012  763 relations (335 full + 428 combined from 2621 partial), need 546
+Wed Oct 10 16:19:32 2012  begin with 2956 relations
+Wed Oct 10 16:19:32 2012  reduce to 1123 relations in 2 passes
+Wed Oct 10 16:19:32 2012  attempting to read 1123 relations
+Wed Oct 10 16:19:32 2012  recovered 1123 relations
+Wed Oct 10 16:19:32 2012  recovered 128 polynomials
+Wed Oct 10 16:19:32 2012  attempting to build 763 cycles
+Wed Oct 10 16:19:32 2012  found 763 cycles in 1 passes
+Wed Oct 10 16:19:32 2012  distribution of cycle lengths:
+Wed Oct 10 16:19:32 2012     length 1 : 335
+Wed Oct 10 16:19:32 2012     length 2 : 428
+Wed Oct 10 16:19:32 2012  largest cycle: 2 relations
+Wed Oct 10 16:19:32 2012  matrix is 450 x 763 (0.1 MB) with weight 14037 (18.40/col)
+Wed Oct 10 16:19:32 2012  sparse part has weight 14037 (18.40/col)
+Wed Oct 10 16:19:32 2012  filtering completed in 4 passes
+Wed Oct 10 16:19:32 2012  matrix is 432 x 496 (0.0 MB) with weight 7822 (15.77/col)
+Wed Oct 10 16:19:32 2012  sparse part has weight 7822 (15.77/col)
+Wed Oct 10 16:19:32 2012  commencing Lanczos iteration
+Wed Oct 10 16:19:32 2012  memory use: 0.0 MB
+Wed Oct 10 16:19:32 2012  lanczos halted after 8 iterations (dim = 428)
+Wed Oct 10 16:19:32 2012  recovered 61 nontrivial dependencies
+Wed Oct 10 16:19:32 2012  prp20 factor: 15798458775729265787
+Wed Oct 10 16:19:32 2012  prp20 factor: 16211268212022632219
+Wed Oct 10 16:19:32 2012  elapsed time 00:00:01
+Wed Oct 10 16:20:05 2012  
+Wed Oct 10 16:20:05 2012  
+Wed Oct 10 16:20:05 2012  Msieve v. 1.50 (SVN Unversioned directory)
+Wed Oct 10 16:20:05 2012  random seeds: 7faaef95 9b2b3681
+Wed Oct 10 16:20:05 2012  factoring 263526065107572926217359117662438776409 (39 digits)
+Wed Oct 10 16:20:05 2012  searching for 15-digit factors
+Wed Oct 10 16:20:05 2012  commencing quadratic sieve (39-digit input)
+Wed Oct 10 16:20:05 2012  using multiplier of 1
+Wed Oct 10 16:20:05 2012  using 32kb Intel Core sieve core
+Wed Oct 10 16:20:05 2012  sieve interval: 4 blocks of size 32768
+Wed Oct 10 16:20:05 2012  processing polynomials in batches of 51
+Wed Oct 10 16:20:05 2012  using a sieve bound of 7019 (450 primes)
+Wed Oct 10 16:20:05 2012  using large prime bound of 280760 (18 bits)
+Wed Oct 10 16:20:05 2012  polynomial 'A' values have 5 factors
+Wed Oct 10 16:20:05 2012  547 relations (242 full + 305 combined from 2043 partial), need 546
+Wed Oct 10 16:20:05 2012  begin with 2285 relations
+Wed Oct 10 16:20:05 2012  reduce to 796 relations in 2 passes
+Wed Oct 10 16:20:05 2012  attempting to read 796 relations
+Wed Oct 10 16:20:05 2012  recovered 796 relations
+Wed Oct 10 16:20:05 2012  recovered 96 polynomials
+Wed Oct 10 16:20:05 2012  attempting to build 547 cycles
+Wed Oct 10 16:20:05 2012  found 547 cycles in 1 passes
+Wed Oct 10 16:20:05 2012  distribution of cycle lengths:
+Wed Oct 10 16:20:05 2012     length 1 : 242
+Wed Oct 10 16:20:05 2012     length 2 : 305
+Wed Oct 10 16:20:05 2012  largest cycle: 2 relations
+Wed Oct 10 16:20:05 2012  matrix is 450 x 547 (0.1 MB) with weight 9923 (18.14/col)
+Wed Oct 10 16:20:05 2012  sparse part has weight 9923 (18.14/col)
+Wed Oct 10 16:20:05 2012  filtering completed in 3 passes
+Wed Oct 10 16:20:05 2012  matrix is 432 x 496 (0.0 MB) with weight 8694 (17.53/col)
+Wed Oct 10 16:20:05 2012  sparse part has weight 8694 (17.53/col)
+Wed Oct 10 16:20:05 2012  commencing Lanczos iteration
+Wed Oct 10 16:20:05 2012  memory use: 0.1 MB
+Wed Oct 10 16:20:05 2012  lanczos halted after 8 iterations (dim = 431)
+Wed Oct 10 16:20:05 2012  recovered 64 nontrivial dependencies
+Wed Oct 10 16:20:05 2012  prp20 factor: 15906143384815964507
+Wed Oct 10 16:20:05 2012  prp20 factor: 16567565042770544987
+Wed Oct 10 16:20:05 2012  elapsed time 00:00:00
+Wed Oct 10 16:22:09 2012  
+Wed Oct 10 16:22:09 2012  
+Wed Oct 10 16:22:09 2012  Msieve v. 1.50 (SVN Unversioned directory)
+Wed Oct 10 16:22:09 2012  random seeds: bd781ff5 6f719a60
+Wed Oct 10 16:22:09 2012  factoring 216704547232250002874548743555533375497 (39 digits)
+Wed Oct 10 16:22:10 2012  searching for 15-digit factors
+Wed Oct 10 16:22:10 2012  commencing quadratic sieve (39-digit input)
+Wed Oct 10 16:22:10 2012  using multiplier of 1
+Wed Oct 10 16:22:10 2012  using 32kb Intel Core sieve core
+Wed Oct 10 16:22:10 2012  sieve interval: 4 blocks of size 32768
+Wed Oct 10 16:22:10 2012  processing polynomials in batches of 51
+Wed Oct 10 16:22:10 2012  using a sieve bound of 7121 (450 primes)
+Wed Oct 10 16:22:10 2012  using large prime bound of 284840 (18 bits)
+Wed Oct 10 16:22:10 2012  polynomial 'A' values have 5 factors
+Wed Oct 10 16:22:10 2012  637 relations (273 full + 364 combined from 2472 partial), need 546
+Wed Oct 10 16:22:10 2012  begin with 2745 relations
+Wed Oct 10 16:22:10 2012  reduce to 945 relations in 2 passes
+Wed Oct 10 16:22:10 2012  attempting to read 945 relations
+Wed Oct 10 16:22:10 2012  recovered 945 relations
+Wed Oct 10 16:22:10 2012  recovered 128 polynomials
+Wed Oct 10 16:22:10 2012  attempting to build 637 cycles
+Wed Oct 10 16:22:10 2012  found 637 cycles in 1 passes
+Wed Oct 10 16:22:10 2012  distribution of cycle lengths:
+Wed Oct 10 16:22:10 2012     length 1 : 273
+Wed Oct 10 16:22:10 2012     length 2 : 364
+Wed Oct 10 16:22:10 2012  largest cycle: 2 relations
+Wed Oct 10 16:22:10 2012  matrix is 450 x 637 (0.1 MB) with weight 11760 (18.46/col)
+Wed Oct 10 16:22:10 2012  sparse part has weight 11760 (18.46/col)
+Wed Oct 10 16:22:10 2012  filtering completed in 3 passes
+Wed Oct 10 16:22:10 2012  matrix is 432 x 496 (0.0 MB) with weight 8378 (16.89/col)
+Wed Oct 10 16:22:10 2012  sparse part has weight 8378 (16.89/col)
+Wed Oct 10 16:22:10 2012  commencing Lanczos iteration
+Wed Oct 10 16:22:10 2012  memory use: 0.1 MB
+Wed Oct 10 16:22:10 2012  lanczos halted after 8 iterations (dim = 427)
+Wed Oct 10 16:22:10 2012  recovered 60 nontrivial dependencies
+Wed Oct 10 16:22:10 2012  prp20 factor: 14502217481015265263
+Wed Oct 10 16:22:10 2012  prp20 factor: 14942855981572208519
+Wed Oct 10 16:22:10 2012  elapsed time 00:00:01
+Wed Oct 10 16:22:48 2012  
+Wed Oct 10 16:22:48 2012  
+Wed Oct 10 16:22:48 2012  Msieve v. 1.50 (SVN Unversioned directory)
+Wed Oct 10 16:22:48 2012  random seeds: 964d1991 e2c07b5d
+Wed Oct 10 16:22:48 2012  factoring 219961851245464254612277481930578446253 (39 digits)
+Wed Oct 10 16:22:48 2012  searching for 15-digit factors
+Wed Oct 10 16:22:48 2012  commencing quadratic sieve (39-digit input)
+Wed Oct 10 16:22:48 2012  using multiplier of 37
+Wed Oct 10 16:22:48 2012  using 32kb Intel Core sieve core
+Wed Oct 10 16:22:48 2012  sieve interval: 4 blocks of size 32768
+Wed Oct 10 16:22:48 2012  processing polynomials in batches of 51
+Wed Oct 10 16:22:48 2012  using a sieve bound of 6781 (450 primes)
+Wed Oct 10 16:22:48 2012  using large prime bound of 271240 (18 bits)
+Wed Oct 10 16:22:48 2012  polynomial 'A' values have 5 factors
+Wed Oct 10 16:22:48 2012  563 relations (277 full + 286 combined from 2084 partial), need 546
+Wed Oct 10 16:22:48 2012  begin with 2361 relations
+Wed Oct 10 16:22:48 2012  reduce to 792 relations in 2 passes
+Wed Oct 10 16:22:48 2012  attempting to read 792 relations
+Wed Oct 10 16:22:48 2012  recovered 792 relations
+Wed Oct 10 16:22:48 2012  recovered 80 polynomials
+Wed Oct 10 16:22:48 2012  attempting to build 563 cycles
+Wed Oct 10 16:22:48 2012  found 563 cycles in 1 passes
+Wed Oct 10 16:22:48 2012  distribution of cycle lengths:
+Wed Oct 10 16:22:48 2012     length 1 : 277
+Wed Oct 10 16:22:48 2012     length 2 : 286
+Wed Oct 10 16:22:48 2012  largest cycle: 2 relations
+Wed Oct 10 16:22:48 2012  matrix is 450 x 563 (0.1 MB) with weight 10224 (18.16/col)
+Wed Oct 10 16:22:48 2012  sparse part has weight 10224 (18.16/col)
+Wed Oct 10 16:22:48 2012  filtering completed in 4 passes
+Wed Oct 10 16:22:48 2012  matrix is 421 x 485 (0.0 MB) with weight 8446 (17.41/col)
+Wed Oct 10 16:22:48 2012  sparse part has weight 8446 (17.41/col)
+Wed Oct 10 16:22:48 2012  commencing Lanczos iteration
+Wed Oct 10 16:22:48 2012  memory use: 0.1 MB
+Wed Oct 10 16:22:48 2012  lanczos halted after 8 iterations (dim = 416)
+Wed Oct 10 16:22:48 2012  recovered 62 nontrivial dependencies
+Wed Oct 10 16:22:48 2012  prp20 factor: 14017925479908357299
+Wed Oct 10 16:22:48 2012  prp20 factor: 15691469580197986847
+Wed Oct 10 16:22:48 2012  elapsed time 00:00:00
+Wed Oct 10 16:22:56 2012  
+Wed Oct 10 16:22:56 2012  
+Wed Oct 10 16:22:56 2012  Msieve v. 1.50 (SVN Unversioned directory)
+Wed Oct 10 16:22:56 2012  random seeds: 49ff582d 8498ef6f
+Wed Oct 10 16:22:56 2012  factoring 268908944716124432534887833069718111753 (39 digits)
+Wed Oct 10 16:22:56 2012  searching for 15-digit factors
+Wed Oct 10 16:22:56 2012  commencing quadratic sieve (39-digit input)
+Wed Oct 10 16:22:56 2012  using multiplier of 1
+Wed Oct 10 16:22:56 2012  using 32kb Intel Core sieve core
+Wed Oct 10 16:22:56 2012  sieve interval: 4 blocks of size 32768
+Wed Oct 10 16:22:56 2012  processing polynomials in batches of 51
+Wed Oct 10 16:22:56 2012  using a sieve bound of 6997 (450 primes)
+Wed Oct 10 16:22:56 2012  using large prime bound of 279880 (18 bits)
+Wed Oct 10 16:22:56 2012  polynomial 'A' values have 5 factors
+Wed Oct 10 16:22:56 2012  863 relations (292 full + 571 combined from 3087 partial), need 546
+Wed Oct 10 16:22:56 2012  begin with 3379 relations
+Wed Oct 10 16:22:56 2012  reduce to 1322 relations in 2 passes
+Wed Oct 10 16:22:56 2012  attempting to read 1322 relations
+Wed Oct 10 16:22:56 2012  recovered 1322 relations
+Wed Oct 10 16:22:56 2012  recovered 192 polynomials
+Wed Oct 10 16:22:56 2012  attempting to build 863 cycles
+Wed Oct 10 16:22:56 2012  found 863 cycles in 1 passes
+Wed Oct 10 16:22:56 2012  distribution of cycle lengths:
+Wed Oct 10 16:22:56 2012     length 1 : 292
+Wed Oct 10 16:22:56 2012     length 2 : 571
+Wed Oct 10 16:22:56 2012  largest cycle: 2 relations
+Wed Oct 10 16:22:56 2012  matrix is 450 x 863 (0.1 MB) with weight 16580 (19.21/col)
+Wed Oct 10 16:22:56 2012  sparse part has weight 16580 (19.21/col)
+Wed Oct 10 16:22:56 2012  filtering completed in 1 passes
+Wed Oct 10 16:22:56 2012  matrix is 450 x 514 (0.0 MB) with weight 8380 (16.30/col)
+Wed Oct 10 16:22:56 2012  sparse part has weight 8380 (16.30/col)
+Wed Oct 10 16:22:56 2012  commencing Lanczos iteration
+Wed Oct 10 16:22:56 2012  memory use: 0.1 MB
+Wed Oct 10 16:22:56 2012  lanczos halted after 9 iterations (dim = 445)
+Wed Oct 10 16:22:56 2012  recovered 63 nontrivial dependencies
+Wed Oct 10 16:22:56 2012  prp20 factor: 15745485113837645399
+Wed Oct 10 16:22:56 2012  prp20 factor: 17078479498850022047
+Wed Oct 10 16:22:56 2012  elapsed time 00:00:00
+Wed Oct 10 16:25:44 2012  
+Wed Oct 10 16:25:44 2012  
+Wed Oct 10 16:25:44 2012  Msieve v. 1.50 (SVN Unversioned directory)
+Wed Oct 10 16:25:44 2012  random seeds: 109cb1f7 8156d224
+Wed Oct 10 16:25:44 2012  factoring 284754967079502582582836235544843544473 (39 digits)
+Wed Oct 10 16:25:44 2012  searching for 15-digit factors
+Wed Oct 10 16:25:44 2012  commencing quadratic sieve (39-digit input)
+Wed Oct 10 16:25:44 2012  using multiplier of 1
+Wed Oct 10 16:25:44 2012  using 32kb Intel Core sieve core
+Wed Oct 10 16:25:44 2012  sieve interval: 4 blocks of size 32768
+Wed Oct 10 16:25:44 2012  processing polynomials in batches of 51
+Wed Oct 10 16:25:44 2012  using a sieve bound of 6883 (450 primes)
+Wed Oct 10 16:25:44 2012  using large prime bound of 275320 (18 bits)
+Wed Oct 10 16:25:44 2012  polynomial 'A' values have 5 factors
+Wed Oct 10 16:25:44 2012  802 relations (309 full + 493 combined from 2665 partial), need 546
+Wed Oct 10 16:25:44 2012  begin with 2974 relations
+Wed Oct 10 16:25:44 2012  reduce to 1203 relations in 2 passes
+Wed Oct 10 16:25:44 2012  attempting to read 1203 relations
+Wed Oct 10 16:25:44 2012  recovered 1203 relations
+Wed Oct 10 16:25:44 2012  recovered 96 polynomials
+Wed Oct 10 16:25:44 2012  attempting to build 802 cycles
+Wed Oct 10 16:25:44 2012  found 802 cycles in 1 passes
+Wed Oct 10 16:25:44 2012  distribution of cycle lengths:
+Wed Oct 10 16:25:44 2012     length 1 : 309
+Wed Oct 10 16:25:44 2012     length 2 : 493
+Wed Oct 10 16:25:44 2012  largest cycle: 2 relations
+Wed Oct 10 16:25:44 2012  matrix is 450 x 802 (0.1 MB) with weight 15079 (18.80/col)
+Wed Oct 10 16:25:44 2012  sparse part has weight 15079 (18.80/col)
+Wed Oct 10 16:25:44 2012  filtering completed in 3 passes
+Wed Oct 10 16:25:44 2012  matrix is 427 x 491 (0.0 MB) with weight 7676 (15.63/col)
+Wed Oct 10 16:25:44 2012  sparse part has weight 7676 (15.63/col)
+Wed Oct 10 16:25:44 2012  commencing Lanczos iteration
+Wed Oct 10 16:25:44 2012  memory use: 0.0 MB
+Wed Oct 10 16:25:44 2012  lanczos halted after 8 iterations (dim = 423)
+Wed Oct 10 16:25:44 2012  recovered 61 nontrivial dependencies
+Wed Oct 10 16:25:44 2012  prp20 factor: 16821866198912149979
+Wed Oct 10 16:25:44 2012  prp20 factor: 16927668054922309787
+Wed Oct 10 16:25:44 2012  elapsed time 00:00:00

@@ -1,0 +1,10 @@
+0.2.1 - 21st August 2001
+
+"Patches" are now available, which is a group of settings for the various componants stored for recall.
+A new experimental Guile interface has been added, and for now Crank boots into it. You can build without it (configure
+--without-guile), but this disables the patch system.
+
+0.2.0 - 15th August 2001
+
+New development version - very buggy / incomplete! Use 0.1.x if you want 
+to be able to do anything...
